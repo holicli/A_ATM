@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.njfu.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.njfu.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.njfu.activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.OKActivity"
+            android:label="@string/title_activity_ok" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.ListUsersActivity"
+            android:label="@string/title_activity_list_users" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.DescActivity"
+            android:label="@string/title_activity_desc" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.AddActivity"
+            android:label="@string/title_activity_add" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.StateActivity"
+            android:label="@string/title_activity_state" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.TurnActivity"
+            android:label="@string/title_activity_turn" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.LossActivity"
+            android:label="@string/title_activity_loss" >
+        </activity>
+        <activity
+            android:name="com.njfu.activity.LogokActivity"
+            android:label="@string/title_activity_logok" >
+        </activity>
+    </application>
+
+</manifest>

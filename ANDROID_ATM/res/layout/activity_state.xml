@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StateActivity" >
+
+    <TextView
+        android:id="@+id/state_text_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的当前状态为" />
+    <TextView
+        android:id="@+id/state_text_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state_text_show"
+        android:text="请输入密码" />
+
+    <EditText
+        android:id="@+id/state_edit_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/state_text_show"
+        android:layout_below="@id/state_text_show"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:text="请输入密码" >
+
+        <requestFocus />
+    </EditText>
+    <Button 
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state_edit_pwd"
+        android:text="激活/挂失"
+        />
+    <Button 
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes"
+        android:text="取消"
+        />
+
+</RelativeLayout>
